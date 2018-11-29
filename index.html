@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minesweeping</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="warpper">
+        <!--上边栏提示信息-->
+        <div class="message"> 
+            <input class="mines-num" type="text" value='请输入地雷数'>                                      
+            <div class="mines-left"></div>
+            <div class="face">
+                <img class="smile-face" src="image\face_normal.bmp" alt="smile-face">
+                <img class="cry-face" src="image\face_fail.bmp" alt="cry-face">
+            </div>
+            <div class="time"></div>
+        </div>
+
+        <!--游戏提示信息-->
+        <div class="note pause">Pause</div>
+        <div class="note game-over">Game Over</div>
+        <div class="note restart">Click '<span>Face</span>' To Play Again!
+            <div><img class="cross" src="image\cross.bmp" alt="cross"></div>
+        </div>
+        <div class="note success">You Are So Amazzing!</div>
+
+        <!--游戏区域-->
+        <canvas id="game-area" width="800" height="480"></canvas>
+    </div>
+    <!-- 预加载图片资源 -->
+	<div class ="load-images">
+            <img src ="image\cross.bmp">
+            <img src ="image\face_normal.bmp">
+            <img src ="image\face_fail.bmp">
+            <img src ="image\markRight.bmp" >
+            <img src ="image\blank.bmp" >
+            <img src ="image\flag.bmp" >
+            <img src ="image\ask.bmp" >
+            <img src ="image\mine.bmp" >
+            <img src ="image\blood.bmp" >
+            <img src ="image\error.bmp" >
+            <img src ="image\0.bmp" >
+            <img src ="image\1.bmp" >
+            <img src ="image\2.bmp" >
+            <img src ="image\3.bmp" >
+            <img src ="image\4.bmp" >
+            <img src ="image\5.bmp" >
+            <img src ="image\6.bmp" >
+            <img src ="image\7.bmp" >
+            <img src ="image\8.bmp" >
+        </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

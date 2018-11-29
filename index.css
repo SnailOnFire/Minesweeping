@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.warpper{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;  
+    bottom: 0;
+    width: 800px;
+    height: 560px;
+    border: 5px solid grey;
+    border-radius: 8px;
+}
+
+.message{
+    position: absolute;
+    top: 0;
+    width: 800px;
+    height: 80px;
+    background: green;
+}
+
+.mines-num{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+#game-area{   /*width和height不能写在这里，只能写在行间并且不带单位*/
+    position: absolute;
+    top: 80px;
+    background: skyblue;
+}
+
+.note{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	margin: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 20px;
+	font-size: 30px;
+	line-height: 100px;
+	text-align: center;
+	background: white;
+	display: none;
+	z-index: 2;
+}
+
+.pause{
+	background: yellow;
+}
+
+.game-over{
+	background: red;
+}
+
+.success,span{
+	color: red;
+}
+
+.cross{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 20px;
+    top: 10px;
+}
+
+.face{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 5px;
+    border-color: white grey grey white;
+    border-style: solid;
+}
+
+.smile-face{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.cry-face{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.mines-left,.time{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    bottom: 0;
+    background: white;
+    border: 5px solid grey;
+    color: red;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.mines-left{
+    left: 10px;
+}
+
+.time{
+    right: 10px;
+}
+
+.load-images{
+    display: none;
+}
